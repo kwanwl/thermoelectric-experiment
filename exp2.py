@@ -1,4 +1,4 @@
-__author__ = 'wei lek'
+__author__ = 'xx'
 import time
 import numpy as np
 import Gnuplot
