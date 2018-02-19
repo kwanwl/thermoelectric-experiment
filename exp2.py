@@ -80,7 +80,6 @@ print usb_ps.query('*IDN?')
 usb_ps.write('*CLS')
 usb_ps.write('VOLT:LEV 3V')
 usb_ps.write('CURR:LEV 2A')
-usb_ps.write('OUTP:STAT ON')
 time.sleep(0.5)
 
 time.sleep(0.5)
@@ -116,6 +115,7 @@ while flag3==0:
         if s[2] == '1':
             if flag2 == 0:
                 t = time.time()
+                usb_ps.write('OUTP:STAT ON')
                 flag2 = 1
             tnow = time.time() - t
             print '{0:.1f}'.format(tnow), '\t',
