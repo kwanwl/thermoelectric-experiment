@@ -1,3 +1,4 @@
+#for windows
 __author__ = 'WL'
 import time
 import numpy as np
